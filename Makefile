@@ -8,4 +8,4 @@ build:
 
 .PHONY: tests
 tests: build
-	docker run -it --rm -p 8000:8188 --gpus all local/comfyui:latest
+	docker run -it --rm -p 8000:8188 --runtime=nvidia --gpus=all local/comfyui:latest

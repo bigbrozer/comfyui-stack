@@ -1,5 +1,5 @@
 # https://gitlab.com/nvidia/container-images/cuda/blob/master/doc/supported-tags.md
-FROM nvidia/cuda:12.8.1-cudnn-runtime-ubuntu24.04
+FROM nvidia/cuda:12.9.1-cudnn-runtime-ubuntu24.04
 
 ENV COMFYUI_HOME="/opt/comfyui"
 
@@ -25,14 +25,14 @@ RUN set -ex \
     && useradd -l -m -u 2000 -g 2000 -d ${COMFYUI_HOME} comfyui
 
 # https://github.com/astral-sh/uv/releases
-COPY --from=ghcr.io/astral-sh/uv:0.8.3 /uv /uvx /usr/local/bin/
+COPY --from=ghcr.io/astral-sh/uv:0.8.13 /uv /uvx /usr/local/bin/
 
 WORKDIR ${COMFYUI_HOME}
 
 COPY ./pylock.toml ./.python-version ./
 
 # https://github.com/comfyanonymous/ComfyUI/releases
-ENV COMFYUI_VERSION="v0.3.49"
+ENV COMFYUI_VERSION="v0.3.53"
 
 # hadolint ignore=DL3003
 RUN set -ex \

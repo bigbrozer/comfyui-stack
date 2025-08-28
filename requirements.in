@@ -2,14 +2,22 @@
 # CORE
 #===============================================================================
 
---extra-index-url "https://download.pytorch.org/whl/cu128"
-torch==2.7.1+cu128
-torchvision==0.22.1+cu128
-torchaudio==2.7.1+cu128
+--extra-index-url "https://download.pytorch.org/whl/cu129"
+
+# https://download.pytorch.org/whl/cu129/torch/
+torch==2.8.0+cu129
+# https://download.pytorch.org/whl/cu129/torchvision/
+torchvision==0.23.0+cu129
+# https://download.pytorch.org/whl/cu129/torchaudio/
+torchaudio==2.8.0+cu129
 xformers
 
+# Flash Attention
+# https://github.com/Dao-AILab/flash-attention/releases
+flash_attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3/flash_attn-2.8.3+cu12torch2.8cxx11abiTRUE-cp312-cp312-linux_x86_64.whl
+
 # https://github.com/comfyanonymous/ComfyUI/blob/master/requirements.txt
--r "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/refs/tags/v0.3.49/requirements.txt"
+-r "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/refs/tags/v0.3.53/requirements.txt"
 
 #===============================================================================
 # CUSTOM NODES
@@ -61,6 +69,10 @@ onnxruntime-gpu
 # https://github.com/kijai/ComfyUI-KJNodes
 -r "https://raw.githubusercontent.com/kijai/ComfyUI-KJNodes/refs/heads/main/requirements.txt"
 
+# comfyui-local-image-gallery
+# https://github.com/Firetheft/ComfyUI_Local_Image_Gallery
+#-r ""
+
 # comfyui-ltxvideo
 # https://github.com/Lightricks/ComfyUI-LTXVideo
 -r "https://raw.githubusercontent.com/Lightricks/ComfyUI-LTXVideo/refs/heads/master/requirements.txt"
@@ -80,10 +92,6 @@ onnxruntime-gpu
 # comfyui-segment-anything
 # https://github.com/storyicon/comfyui_segment_anything
 -r "https://raw.githubusercontent.com/storyicon/comfyui_segment_anything/refs/heads/main/requirements.txt"
-
-# comfyui-teacache
-# https://github.com/welltop-cn/ComfyUI-TeaCache
--r "https://raw.githubusercontent.com/welltop-cn/ComfyUI-TeaCache/refs/heads/main/requirements.txt"
 
 # comfyui-tooling-nodes
 # https://github.com/Acly/comfyui-tooling-nodes
