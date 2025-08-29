@@ -3396,6 +3396,11 @@ wheels = [
 ]
 
 [[packages]]
+name = "sageattention"
+version = "2.2.0"
+archive = { url = "https://huggingface.co/Kijai/PrecompiledWheels/resolve/main/sageattention-2.2.0-cp312-cp312-linux_x86_64.whl", hashes = { sha256 = "78bd9b58b948e53b358160c65c265f9f9c1788b81f9a3b771c810aca9bf77bf5" } }
+
+[[packages]]
 name = "sam-2"
 version = "1.0"
 vcs = { type = "git", url = "https://github.com/facebookresearch/sam2", commit-id = "2b90b9f5ceec907a1c18123530e92e794ad901a4" }
