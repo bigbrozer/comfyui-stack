@@ -1690,6 +1690,12 @@ wheels = [
 ]
 
 [[packages]]
+name = "moviepy"
+version = "2.2.1"
+sdist = { url = "https://files.pythonhosted.org/packages/de/61/15f9476e270f64c78a834e7459ca045d669f869cec24eed26807b8cd479d/moviepy-2.2.1.tar.gz", upload-time = 2025-05-21T19:31:52Z, size = 58431438, hashes = { sha256 = "c80cb56815ece94e5e3e2d361aa40070eeb30a09d23a24c4e684d03e16deacb1" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/9a/73/7d3b2010baa0b5eb1e4dfa9e4385e89b6716be76f2fa21a6c0fe34b68e5a/moviepy-2.2.1-py3-none-any.whl", upload-time = 2025-05-21T19:31:50Z, size = 129871, hashes = { sha256 = "6b56803fec2ac54b557404126ac1160e65448e03798fa282bd23e8fab3795060" } }]
+
+[[packages]]
 name = "mpmath"
 version = "1.3.0"
 wheels = [{ url = "https://download.pytorch.org/whl/mpmath-1.3.0-py3-none-any.whl", hashes = { sha256 = "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c" } }]
@@ -2366,6 +2372,12 @@ name = "prettytable"
 version = "3.16.0"
 sdist = { url = "https://files.pythonhosted.org/packages/99/b1/85e18ac92afd08c533603e3393977b6bc1443043115a47bb094f3b98f94f/prettytable-3.16.0.tar.gz", upload-time = 2025-03-24T19:39:04Z, size = 66276, hashes = { sha256 = "3c64b31719d961bf69c9a7e03d0c1e477320906a98da63952bc6698d6164ff57" } }
 wheels = [{ url = "https://files.pythonhosted.org/packages/02/c7/5613524e606ea1688b3bdbf48aa64bafb6d0a4ac3750274c43b6158a390f/prettytable-3.16.0-py3-none-any.whl", upload-time = 2025-03-24T19:39:02Z, size = 33863, hashes = { sha256 = "b5eccfabb82222f5aa46b798ff02a8452cf530a352c31bddfa29be41242863aa" } }]
+
+[[packages]]
+name = "proglog"
+version = "0.1.12"
+sdist = { url = "https://files.pythonhosted.org/packages/c2/af/c108866c452eda1132f3d6b3cb6be2ae8430c97e9309f38ca9dbd430af37/proglog-0.1.12.tar.gz", upload-time = 2025-05-09T14:36:18Z, size = 8794, hashes = { sha256 = "361ee074721c277b89b75c061336cb8c5f287c92b043efa562ccf7866cda931c" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/c1/1b/f7ea6cde25621cd9236541c66ff018f4268012a534ec31032bcb187dc5e7/proglog-0.1.12-py3-none-any.whl", upload-time = 2025-05-09T14:36:16Z, size = 6337, hashes = { sha256 = "ccaafce51e80a81c65dc907a460c07ccb8ec1f78dc660cfd8f9ec3a22f01b84c" } }]
 
 [[packages]]
 name = "propcache"
@@ -3184,6 +3196,12 @@ name = "segment-anything"
 version = "1.0"
 sdist = { url = "https://files.pythonhosted.org/packages/4f/88/7725f418f2bb4a7ac2e5e8295fbbca2900c70c8fe5ba48b3aff5788af9a2/segment_anything-1.0.tar.gz", upload-time = 2023-04-06T18:04:40Z, size = 31191, hashes = { sha256 = "ed0c9f6fb07bbef9c6238a7028a13c8272f1ba6b6305ca73e3e064266503736b" } }
 wheels = [{ url = "https://files.pythonhosted.org/packages/75/77/8e0c16abf151a1dd076b562febc0da2ecf1132b0b41826087af96f101f42/segment_anything-1.0-py3-none-any.whl", upload-time = 2023-04-06T18:04:38Z, size = 36560, hashes = { sha256 = "86f67d417a915823c3302098effe9008b688945772517310956bb49de0e7f02e" } }]
+
+[[packages]]
+name = "send2trash"
+version = "1.8.3"
+sdist = { url = "https://files.pythonhosted.org/packages/fd/3a/aec9b02217bb79b87bbc1a21bc6abc51e3d5dcf65c30487ac96c0908c722/Send2Trash-1.8.3.tar.gz", upload-time = 2024-04-07T00:01:09Z, size = 17394, hashes = { sha256 = "b18e7a3966d99871aefeb00cfbcfdced55ce4871194810fc71f4aa484b953abf" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/40/b0/4562db6223154aa4e22f939003cb92514c79f3d4dccca3444253fd17f902/Send2Trash-1.8.3-py3-none-any.whl", upload-time = 2024-04-07T00:01:07Z, size = 18072, hashes = { sha256 = "0c31227e0bd08961c7665474a3d1ef7193929fedda4233843689baa056be46c9" } }]
 
 [[packages]]
 name = "sentencepiece"

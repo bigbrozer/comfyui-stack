@@ -79,7 +79,7 @@ onnxruntime-gpu
 
 # comfyui-local-image-gallery
 # https://github.com/Firetheft/ComfyUI_Local_Image_Gallery
-#-r ""
+-r "https://raw.githubusercontent.com/Firetheft/ComfyUI_Local_Image_Gallery/refs/heads/main/requirements.txt"
 
 # comfyui-ollama
 # https://github.com/stavsap/comfyui-ollama
