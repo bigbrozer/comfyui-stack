@@ -692,8 +692,8 @@ wheels = [{ url = "https://download.pytorch.org/whl/filelock-3.13.1-py3-none-any
 
 [[packages]]
 name = "flash-attn"
-version = "2.8.3"
-archive = { url = "https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3/flash_attn-2.8.3+cu12torch2.8cxx11abiTRUE-cp312-cp312-linux_x86_64.whl", hashes = { sha256 = "f25da18657a87fc83dc1bfb8b7751b82246e9db355510226b674fd437c34b5fb" } }
+version = "2.8.2"
+archive = { url = "https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.3.14/flash_attn-2.8.2+cu129torch2.8-cp312-cp312-linux_x86_64.whl", hashes = { sha256 = "5611d3e58c29743204544a22820953e6b93b19efcf208db6f7364a041460918c" } }
 
 [[packages]]
 name = "flatbuffers"
@@ -869,6 +869,12 @@ name = "ftfy"
 version = "6.3.1"
 sdist = { url = "https://files.pythonhosted.org/packages/a5/d3/8650919bc3c7c6e90ee3fa7fd618bf373cbbe55dff043bd67353dbb20cd8/ftfy-6.3.1.tar.gz", upload-time = 2024-10-26T00:50:35Z, size = 308927, hashes = { sha256 = "9b3c3d90f84fb267fe64d375a07b7f8912d817cf86009ae134aa03e1819506ec" } }
 wheels = [{ url = "https://files.pythonhosted.org/packages/ab/6e/81d47999aebc1b155f81eca4477a616a70f238a2549848c38983f3c22a82/ftfy-6.3.1-py3-none-any.whl", upload-time = 2024-10-26T00:50:33Z, size = 44821, hashes = { sha256 = "7c70eb532015cd2f9adb53f101fb6c7945988d023a085d127d1573dc49dd0083" } }]
+
+[[packages]]
+name = "future"
+version = "1.0.0"
+sdist = { url = "https://files.pythonhosted.org/packages/a7/b2/4140c69c6a66432916b26158687e821ba631a4c9273c474343badf84d3ba/future-1.0.0.tar.gz", upload-time = 2024-02-21T11:52:38Z, size = 1228490, hashes = { sha256 = "bd2968309307861edae1458a4f8a4f3598c03be43b97521076aebf5d94c07b05" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/da/71/ae30dadffc90b9006d77af76b393cb9dfbfc9629f339fc1574a1c52e6806/future-1.0.0-py3-none-any.whl", upload-time = 2024-02-21T11:52:35Z, size = 491326, hashes = { sha256 = "929292d34f5872e70396626ef385ec22355a1fae8ad29e1a734c3e43f9fbc216" } }]
 
 [[packages]]
 name = "fvcore"
@@ -2672,6 +2678,12 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/48/d7/f13fedce3b21d24f6f154d1dee7287464a34728dcb3b0c50f687dbad5765/pylibsrtp-0.12.0-cp39-abi3-win32.whl", upload-time = 2025-04-06T12:35:48Z, size = 1156186, hashes = { sha256 = "cbc9bfbfb2597e993a1aa16b832ba16a9dd4647f70815421bb78484f8b50b924" } },
     { url = "https://files.pythonhosted.org/packages/9b/26/3a20b638a3a3995368f856eeb10701dd6c0e9ace9fb6665eeb1b95ccce19/pylibsrtp-0.12.0-cp39-abi3-win_amd64.whl", upload-time = 2025-04-06T12:35:50Z, size = 1485072, hashes = { sha256 = "061ef1dbb5f08079ac6d7515b7e67ca48a3163e16e5b820beea6b01cb31d7e54" } },
 ]
+
+[[packages]]
+name = "pyloudnorm"
+version = "0.1.1"
+sdist = { url = "https://files.pythonhosted.org/packages/75/b5/39d59c44ecd828fabfdbd796b50a561e6543ca90ef440ab307374f107856/pyloudnorm-0.1.1.tar.gz", upload-time = 2023-01-05T16:11:28Z, size = 8588, hashes = { sha256 = "63cd4e197dea4e7795160ea08ed02d318091bce883e436a6dbc5963326b71e1e" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/58/f5/6724805521ab4e723a12182f92374031032aff28a8a89dc8505c52b79032/pyloudnorm-0.1.1-py3-none-any.whl", upload-time = 2023-01-05T16:11:27Z, size = 9636, hashes = { sha256 = "d7f12ebdd097a464d87ce2878fc4d942f15f8233e26cc03f33fefa226f869a14" } }]
 
 [[packages]]
 name = "pymatting"

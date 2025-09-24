@@ -85,6 +85,7 @@ install_extension comfyui-tooling-nodes https://github.com/Acly/comfyui-tooling-
 install_extension comfyui-ultimatesdupscale https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git
 install_extension comfyui-vibevoice https://github.com/Enemyx-net/VibeVoice-ComfyUI.git
 install_extension comfyui-videohelpersuite https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git
+install_extension comfyui-wanvideowrapper https://github.com/kijai/ComfyUI-WanVideoWrapper.git
 
 # We are now ready to start ComfyUI. Enjoy !
 log "Ready to start..."
