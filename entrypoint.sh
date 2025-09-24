@@ -80,6 +80,7 @@ install_extension comfyui-ollama https://github.com/stavsap/comfyui-ollama.git
 install_extension comfyui-promptstylers https://github.com/wolfden/ComfyUi_PromptStylers
 install_extension comfyui-rgthree https://github.com/rgthree/rgthree-comfy.git
 install_extension comfyui-segment-anything https://github.com/storyicon/comfyui_segment_anything.git
+install_extension comfyui-segment-anything-2 https://github.com/kijai/ComfyUI-segment-anything-2.git
 install_extension comfyui-tooling-nodes https://github.com/Acly/comfyui-tooling-nodes.git
 install_extension comfyui-ultimatesdupscale https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git
 install_extension comfyui-vibevoice https://github.com/Enemyx-net/VibeVoice-ComfyUI.git
