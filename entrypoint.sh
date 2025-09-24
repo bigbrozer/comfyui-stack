@@ -85,9 +85,6 @@ install_extension comfyui-ultimatesdupscale https://github.com/ssitu/ComfyUI_Ult
 install_extension comfyui-vibevoice https://github.com/Enemyx-net/VibeVoice-ComfyUI.git
 install_extension comfyui-videohelpersuite https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git
 
-remove_extension comfyui-wanblockswap
-remove_extension comfyui-ltxvideo
-
 # We are now ready to start ComfyUI. Enjoy !
 log "Ready to start..."
 exec "./python/venv/bin/python" "./app/main.py" "$@"
