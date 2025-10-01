@@ -391,9 +391,9 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/e8/46/84596955ab6f7ec
 
 [[packages]]
 name = "comfyui-workflow-templates"
-version = "0.1.86"
-sdist = { url = "https://files.pythonhosted.org/packages/bf/84/7876017803dce1f961aa54b3a8f74195a45490747a6a5dd798e32db2de07/comfyui_workflow_templates-0.1.86.tar.gz", upload-time = 2025-09-23T14:42:30Z, size = 78676081, hashes = { sha256 = "84af95211f18bdd287585642a17ca4795cda73e1d7660a5aa951655096af17d8" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/d0/c9/cece1fb137ed491c8b47be32e6de8b7c761bfae2fbabcf42982841d64c3c/comfyui_workflow_templates-0.1.86-py3-none-any.whl", upload-time = 2025-09-23T14:42:25Z, size = 78687753, hashes = { sha256 = "a614a471c1f4a35be8cedb6283a602b8bdd820ba39a845a7d8e1e240fd75f1ba" } }]
+version = "0.1.91"
+sdist = { url = "https://files.pythonhosted.org/packages/62/92/758913484cb32343acf8fc90b84f50060f468db62a99dbe4f0d6ac3496ff/comfyui_workflow_templates-0.1.91.tar.gz", upload-time = 2025-09-29T15:37:42Z, size = 81079123, hashes = { sha256 = "6e1c5a6d0ed40bed7d4a0ab0768a7bd47c85ca8c3ff2de2af82c13e266438f04" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/fb/7a/721bc82492c2b915f36d80b074af015cf266c87ab40053941ece29898744/comfyui_workflow_templates-0.1.91-py3-none-any.whl", upload-time = 2025-09-29T15:37:38Z, size = 81091015, hashes = { sha256 = "a0cb42817c7c6fbcfcea062f50c6df00c3877b169b8d302eafb096b33886e6c4" } }]
 
 [[packages]]
 name = "contourpy"
