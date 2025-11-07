@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### <!-- 7 -->⚙️ Miscellaneous Tasks
+
+#### Changelog
+
+- Stay in v0.x
+
 ## 0.1.0 - 2025-11-06
 
 This is the first public release for my [ComfyUI](https://www.comfy.org/) image with pre-installed nodes.

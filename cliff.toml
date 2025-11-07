@@ -98,3 +98,9 @@ topo_order_commits = true
 sort_commits = "newest"
 # Process submodules commits
 recurse_submodules = false
+
+# I may update this when this project is considered stable
+[bump]
+features_always_bump_minor = true
+breaking_always_bump_major = false
+initial_tag = "0.1.0"
