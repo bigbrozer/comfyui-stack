@@ -1,20 +1,26 @@
 variable "COMFYUI_STACK_IMAGE" {
-  default = "bigbrozer/comfyui-stack"
+  validation {
+    condition = COMFYUI_STACK_IMAGE != ""
+    error_message = "You are missing the name of the image !"
+  }
 }
 
 variable "COMFYUI_VERSION" {
-    validation {
-      condition = COMFYUI_VERSION != ""
-      error_message = "You are missing the version of ComfyUI that should be packaged into the image !"
-    }
+  validation {
+    condition = COMFYUI_VERSION != ""
+    error_message = "You are missing the version of ComfyUI that should be packaged into the image !"
+  }
+}
+
+variable "COMFYUI_STACK_VERSION" {
+  validation {
+    condition = COMFYUI_STACK_VERSION != ""
+    error_message = "You are missing the version for this image !"
+  }
 }
 
 variable "UV_VERSION" {
     default = "0.9.5"
-}
-
-variable "COMFYUI_STACK_VERSION" {
-  default = "latest"
 }
 
 target "release" {

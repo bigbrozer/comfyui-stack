@@ -22,9 +22,14 @@ tasks:
       - echo "👉 Compiled requirements for ComfyUI v${COMFYUI_VERSION} using Python {{.PYTHON_VERSION}}."
 
   build:
-    desc: "Build a docker image"
+    desc: "Build the docker image"
     cmds:
       - docker buildx bake {{.TARGET|  default "test"}}
+
+  push:
+    desc: "Push the docker image"
+    cmds:
+      - docker image push --all-tags ${COMFYUI_STACK_IMAGE}
 
   tests:
     cmds:
