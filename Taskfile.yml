@@ -24,7 +24,7 @@ tasks:
   build:
     desc: "Build the docker image"
     cmds:
-      - docker buildx bake
+      - docker buildx bake build
 
   tests:
     cmds:
@@ -53,3 +53,8 @@ tasks:
     desc: "Generate the changelog"
     cmds:
       - scripts/changelog.sh
+
+  preview-changelog:
+    desc: "Preview next changelog"
+    cmds:
+      - git cliff --bump

@@ -23,7 +23,9 @@ variable "UV_VERSION" {
     default = "0.9.5"
 }
 
-target "default" {
+target "docker-metadata-action" {}
+
+target "build" {
   context = "."
   dockerfile = "Dockerfile"
   args = {
