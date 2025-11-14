@@ -65,4 +65,3 @@ This is the first public release for my [ComfyUI](https://www.comfy.org/) image 
 #### Comfyui
 
 - Enable sage attention
-
