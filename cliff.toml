@@ -23,7 +23,10 @@ body = """
     {% for group, commits in commits | group_by(attribute="scope") %}
         #### {{ group | upper_first }}
         {% for commit in commits %}
-            - {{ commit.message | upper_first }}\
+            * {{ commit.message | upper_first }}\
+            {% if commit.body %}
+            {{ commit.body | indent(prefix="  ", first=true) }}\
+            {% endif -%}\
         {% endfor %}
     {% endfor %}\
 {% endfor %}
