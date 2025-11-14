@@ -24,12 +24,7 @@ tasks:
   build:
     desc: "Build the docker image"
     cmds:
-      - docker buildx bake {{.TARGET|  default "test"}}
-
-  push:
-    desc: "Push the docker image"
-    cmds:
-      - docker image push --all-tags ${COMFYUI_STACK_IMAGE}
+      - docker buildx bake build --set "*.tags=${COMFYUI_STACK_IMAGE}:latest"
 
   tests:
     cmds:
@@ -58,3 +53,14 @@ tasks:
     desc: "Generate the changelog"
     cmds:
       - scripts/changelog.sh
+
+  preview-changelog:
+    desc: "Preview next changelog"
+    cmds:
+      - git cliff --bump --unreleased
+
+  release:
+    desc: "Create a new release and tag"
+    cmds:
+      - task: changelog
+      - task: tag

@@ -7,10 +7,10 @@
 # See https://keats.github.io/tera/docs/#introduction
 header = """
 # Changelog\n
-All notable changes to this project will be documented in this file.\n
+All notable changes to this project will be documented in this file.
 """
 body = """
-{% if version %}\
+{% if version %}
     ## {{ version | trim_start_matches(pat="v") }} - {{ timestamp | date(format="%Y-%m-%d") }}
 {% else %}\
     ## Unreleased
@@ -23,10 +23,13 @@ body = """
     {% for group, commits in commits | group_by(attribute="scope") %}
         #### {{ group | upper_first }}
         {% for commit in commits %}
-            - {{ commit.message | upper_first }}\
+            * {{ commit.message | upper_first }}\
+            {% if commit.body %}
+            {{ commit.body | indent(prefix="  ", first=true) }}\
+            {% endif -%}\
         {% endfor %}
     {% endfor %}\
-{% endfor %}\n
+{% endfor %}
 """
 # Remove leading and trailing whitespaces from the changelog's body.
 trim = true

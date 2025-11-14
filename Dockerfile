@@ -50,6 +50,7 @@ RUN set -ex \
     && chown -R comfyui:comfyui .
 
 COPY --chmod=0755 ./entrypoint.sh .
+COPY --chmod=0644 ./extensions.sh .
 
 EXPOSE 8188
 ENTRYPOINT ["/opt/comfyui/entrypoint.sh"]

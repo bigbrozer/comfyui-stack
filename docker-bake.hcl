@@ -23,7 +23,10 @@ variable "UV_VERSION" {
     default = "0.9.5"
 }
 
-target "release" {
+target "docker-metadata-action" {}
+
+target "build" {
+  inherits = ["docker-metadata-action"]
   context = "."
   dockerfile = "Dockerfile"
   args = {
@@ -32,15 +35,4 @@ target "release" {
     # https://github.com/astral-sh/uv/releases
     "UV_VERSION" = UV_VERSION,
   }
-  tags = [
-    "${COMFYUI_STACK_IMAGE}:latest",
-    "${COMFYUI_STACK_IMAGE}:${COMFYUI_STACK_VERSION}",
-  ]
-}
-
-target "test" {
-  inherits = ["release"]
-  tags = [
-    "local/comfyui:latest",
-  ]
 }
