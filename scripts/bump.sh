@@ -4,7 +4,6 @@ set -eu
 
 _metadata="metadata.env"
 next_version="$(git cliff --bumped-version)"
-tag_body="$(git cliff --bump --unreleased --strip header)"
 
 # Checks
 if [[ -n $(git status --porcelain) ]]
@@ -20,4 +19,3 @@ sed -r -i "s/COMFYUI_STACK_VERSION=.+/COMFYUI_STACK_VERSION=${next_version:1}/" 
 git cliff --bump --output CHANGELOG.md
 git add -A
 git commit -m "chore(release): prepare for ${next_version}"
-git tag -a "${next_version}" -m "${tag_body}"
