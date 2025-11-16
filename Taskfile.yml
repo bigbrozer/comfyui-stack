@@ -41,9 +41,14 @@ tasks:
     cmds:
       - git cliff -v --bump --unreleased
 
-  release:
-    desc: "Create a new release and tag"
+  bump:
+    desc: "Bump versions and update the changelog"
+    cmds:
+      - scripts/bump.sh
+
+  tag:
+    desc: "Create a new tag for this release"
     prompt: "You are about to create a new release. Continue ?"
     cmds:
-      - scripts/release.sh
+      - scripts/tag.sh
       - echo "Now, push commit with tags (git push origin --tags) to create the release."
