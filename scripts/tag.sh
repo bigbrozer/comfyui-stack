@@ -3,7 +3,6 @@
 set -eu
 
 next_version="$(git cliff --bumped-version)"
-tag_body="$(git cliff --bump --unreleased --strip header)"
 
 # Checks
 if [[ -n $(git status --porcelain) ]]
@@ -12,4 +11,4 @@ then
   exit 1
 fi
 
-git tag -a "${next_version}" -m "${tag_body}"
+git cliff --bump --unreleased --strip header | git tag --cleanup=verbatim -a "${next_version}" -F -
