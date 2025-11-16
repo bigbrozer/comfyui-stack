@@ -1,0 +1,12 @@
+services:
+  comfyui:
+    build:
+      args:
+        - "COMFYUI_VERSION=0.3.68"
+      context: "."
+      dockerfile: "Dockerfile"
+    image: "bigbrozer/comfyui-stack:dev"
+    restart: "no"
+    environment:
+      PUID: "1000"
+      PGID: "1000"

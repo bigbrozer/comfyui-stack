@@ -1,0 +1,36 @@
+services:
+  comfyui:
+    hostname: comfyui
+    image: "bigbrozer/comfyui-stack:latest"
+    restart: "unless-stopped"
+    runtime: "nvidia"
+    gpus:
+      - driver: "nvidia"
+        count: 1
+    command:
+      # Customize ComfyUI using arguments
+      # https://docs.comfy.org/interface/settings/server-config
+      - "--normalvram"
+    environment:
+      PUID: "1000" # Adapt User ID to match yours locally
+      PGID: "1000" # Adapt Group ID to match yours locally
+    ports:
+      - "8188:8188"
+    volumes:
+      # Persist Python venv & cache for fast startup
+      - "./data/python:/opt/comfyui/python"
+
+      # Persist custom nodes installations
+      - "./data/custom_nodes:/opt/comfyui/app/custom_nodes"
+
+      # Persist models
+      - "./data/models:/opt/comfyui/app/models"
+
+      # Persist input images
+      - "./data/input:/opt/comfyui/app/input"
+
+      # Persist output images
+      - "./data/output:/opt/comfyui/app/output"
+
+      # Persist user profiles
+      - "./data/profiles:/opt/comfyui/app/user"

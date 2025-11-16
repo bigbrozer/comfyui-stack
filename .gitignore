@@ -8,3 +8,7 @@ wheels/
 
 # venv
 .venv
+
+# Compose
+/data/**
+!/data/.keep
