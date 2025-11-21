@@ -1,11 +1,11 @@
-# ComfyUI Stack
+# 🍓 Comfyture
 
-The ComfyUI Stack is a ready to use Docker Compose configuration designed to simplify running [ComfyUI](https://github.com/comfyanonymous/ComfyUI) with NVIDIA GPU acceleration. Unlike traditional setups, this stack eliminates complex configuration steps while pre-installing 20+ extensions (custom nodes).
+Comfyture is a ready to use Docker image and compose stack designed to simplify running [ComfyUI](https://github.com/comfyanonymous/ComfyUI) with NVIDIA GPU acceleration. Unlike traditional setups, this stack eliminates complex configuration steps while pre-installing 20+ extensions (custom nodes).
 
 > [!IMPORTANT]
 > While functional, this project is still under active development and may have bugs during use.
 
-![Screenshot](.readme/comfyui-stack-screenshot-001_reduced-fs8.png)
+![Screenshot](.readme/comfyture-screenshot-001_reduced-fs8.png)
 
 ## Features
 
@@ -21,7 +21,7 @@ The ComfyUI Stack is a ready to use Docker Compose configuration designed to sim
 Download `compose.yaml`:
 
 ```sh
-curl -SL -o compose.yaml https://raw.githubusercontent.com/bigbrozer/comfyui-stack/refs/heads/main/compose.yaml
+curl -SL -o compose.yaml https://raw.githubusercontent.com/bigbrozer/comfyture/refs/heads/main/compose.yaml
 ```
 
 Create `data` directory to persist all data:

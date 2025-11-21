@@ -31,10 +31,10 @@ You're ready to continue !
 ## Getting Started
 
 1. **Discuss changes**
-   * Before submitting new changes, discuss them by submitting [a new issue](https://github.com/bigbrozer/comfyui-stack/issues/new).
+   * Before submitting new changes, discuss them by submitting [a new issue](https://github.com/bigbrozer/comfyture/issues/new).
 
 2. **Fork the Repository:**
-   * Go to the [repository on GitHub](https://github.com/bigbrozer/comfyui-stack).
+   * Go to the [repository on GitHub](https://github.com/bigbrozer/comfyture).
    * Click on the "Fork" button to create a copy of the repository in your GitHub account.
 
 3. **Clone the Forked Repository:**
@@ -79,7 +79,7 @@ You're ready to continue !
 ## Test your changes
 
 1. **Build the image locally**
-   * Run `task build` to launch the building image process locally. It will end with a local docker image tagged `bigbrozer/comfyui-stack:latest`.
+   * Run `task build` to launch the building image process locally. It will end with a local docker image tagged `bigbrozer/comfyture:latest`.
 
 2. **Run the stack locally**
    * Run `task tests` to execute a local ComfyUI instance using docker compose.
@@ -122,4 +122,4 @@ You're ready to continue !
 
 ## License
 
-By contributing to this project, you agree to the terms of the [MIT License](https://github.com/bigbrozer/comfyui-stack/blob/main/LICENSE).
+By contributing to this project, you agree to the terms of the [MIT License](https://github.com/bigbrozer/comfyture/blob/main/LICENSE).
