@@ -5,18 +5,57 @@ Comfyture is a ready to use Docker image and compose stack designed to simplify 
 > [!IMPORTANT]
 > While functional, this project is still under active development and may have bugs during use.
 
-![Screenshot](.readme/comfyture-screenshot-001_reduced-fs8.png)
+![Screenshot](https://github.com/bigbrozer/comfyture/raw/main/.readme/comfyture-screenshot-001_reduced-fs8.png)
+
+Contents:
+
+* [Features](#features)
+* [Requirements](#requirements)
+* [Usage](#usage)
+  * [Setting up](#setting-up)
+  * [Generate your first image](#generate-your-first-image)
+* [Pre-installed extensions](#pre-installed-extensions)
+* [Configuration](#configuration)
+  * [ComfyUI arguments](#comfyui-arguments)
+  * [Envionment variables](#envionment-variables)
+  * [Data storage](#data-storage)
+* [Roadmap](#roadmap)
+* [License](#license)
 
 ## Features
 
-- Easy to run ComfyUI from Docker.
-- GPU-accelerated (Nvidia CUDA only).
-- Flash Attention support.
-- Sage Attention support.
-- Do not run as root, UID/GID are configurables.
-- A set of [pre-installed extensions](#pre-installed-extensions).
+* Easy to run ComfyUI from Docker.
+* GPU-accelerated (Nvidia CUDA only).
+* Flash Attention support.
+* Sage Attention support.
+* Do not run as root, UID/GID are configurables.
+* A set of [pre-installed extensions](#pre-installed-extensions).
 
-## Quick start
+> [!WARNING]
+> This project does not provide models, you must download those manually and put them in `./data/models`.
+
+## Requirements
+
+> [!NOTE]
+> This project has been tested using [Archlinux](https://archlinux.org/) BTW.
+
+* [Docker Compose](https://docs.docker.com/compose/install/)
+* Docker with [Nvidia runtime support](https://wiki.archlinux.org/title/Docker#Run_GPU_accelerated_Docker_containers_with_NVIDIA_GPUs) (run `docker info`):
+
+  ```plain
+  CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+  Discovered Devices:
+  cdi: nvidia.com/gpu=0
+  cdi: nvidia.com/gpu=GPU-be3cb206-b9c5-80bf-ee15-811189491961
+  cdi: nvidia.com/gpu=all
+  Runtimes: nvidia runc io.containerd.runc.v2
+  ```
+
+## Usage
+
+### Setting up
 
 Download `compose.yaml`:
 
@@ -38,7 +77,11 @@ Run:
 docker compose up -d
 ```
 
+### Generate your first image
+
 Open you browser on [http://localhost:8188](http://localhost:8188).
+
+Follow the guide to [generate your first image](https://docs.comfy.org/get_started/first_generation).
 
 Enjoy !
 
@@ -69,25 +112,6 @@ Enjoy !
 | [Enemyx-net/VibeVoice-ComfyUI](https://github.com/Enemyx-net/VibeVoice-ComfyUI)                       | Integration for using VibeVoice audio generation in ComfyUI.  |
 | [Kosinkadink/ComfyUI-VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)       | A suite of nodes for video processing in ComfyUI.             |
 | [kijai/ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper)                     | Nodes for wrapping and processing video in ComfyUI.           |
-
-## Requirements
-
-> [!NOTE]
-> This project has been tested using [Archlinux](https://archlinux.org/) BTW.
-
-- [Docker Compose](https://docs.docker.com/compose/install/)
-- Docker with [Nvidia runtime support](https://wiki.archlinux.org/title/Docker#Run_GPU_accelerated_Docker_containers_with_NVIDIA_GPUs) (run `docker info`):
-
-  ```plain
-  CDI spec directories:
-  /etc/cdi
-  /var/run/cdi
-  Discovered Devices:
-  cdi: nvidia.com/gpu=0
-  cdi: nvidia.com/gpu=GPU-be3cb206-b9c5-80bf-ee15-811189491961
-  cdi: nvidia.com/gpu=all
-  Runtimes: nvidia runc io.containerd.runc.v2
-  ```
 
 ## Configuration
 
@@ -148,9 +172,9 @@ By default, the local `./data` directory will contain everything for ComfyUI. Yo
 
 ## Roadmap
 
-- [ ] Add more stack examples:
-  - [ ] Traefik + Authelia + ComfyUI
-- [ ] Do not use a shell script to install extensions but a **configuration file** (YAML, TOML, ...).
+* [ ] Add more stack examples:
+  * [ ] Traefik + Authelia + ComfyUI
+* [ ] Do not use a shell script to install extensions but a **configuration file** (YAML, TOML, ...).
 
 ## License
 
