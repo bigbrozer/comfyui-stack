@@ -28,6 +28,7 @@ Contents:
 * GPU-accelerated (Nvidia CUDA only).
 * Flash Attention support.
 * Sage Attention support.
+* [New Manager](https://blog.comfy.org/p/meet-the-new-comfyui-manager) enabled by default.
 * Do not run as root, UID/GID are configurables.
 * A set of [pre-installed extensions](#pre-installed-extensions).
 
@@ -127,7 +128,8 @@ A default set of arguments are passed to ComfyUI by default:
 --multi-user
 --disable-smart-memory
 --cache-none
---preview-method=none
+--preview-method=latent2rgb
+--enable-manager
 ```
 
 You can add [extra arguments](https://docs.comfy.org/interface/settings/server-config) to ComfyUI. Creates `extra.yaml`:

@@ -169,6 +169,7 @@ EOF
       "--disable-smart-memory"
       "--cache-none"
       "--preview-method=latent2rgb"
+      "--enable-manager"
     )
   fi
 
