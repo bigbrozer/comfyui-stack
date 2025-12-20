@@ -4,6 +4,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.10.0 - 2025-12-20
+
+### <!-- 0 -->🚀 Features
+
+* **comfy**: Bump to v0.5.1
+  * Announcement for [v0.5.0](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.5.0)
+  * Patch release [v0.5.1](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.5.1)
+* **sage-attention**: Use pre-compiled wheels with cuda 13 support
+* **sharing**: Add `matrix-nio` dependency for sharing support
+* **startup**: Enable the new manager
+  * See [Meet the New ComfyUI-Manager](https://blog.comfy.org/p/meet-the-new-comfyui-manager)
+* **startup**: Enable fast latent previews by default (latent2rgb)
+
 ## 0.9.0 - 2025-12-14
 
 ### <!-- 0 -->🚀 Features
