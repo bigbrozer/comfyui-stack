@@ -130,7 +130,7 @@ function _main() {
   # Install Python and dependencies
   log "Prepare Python environment..."
   uv venv --allow-existing "${VIRTUAL_ENV}"
-  uv pip sync --compile-bytecode --preview pylock.toml
+  uv pip sync --compile-bytecode pylock.toml
 
   # Extensions
   log "Install / update extensions..."
