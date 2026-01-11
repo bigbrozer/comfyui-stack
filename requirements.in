@@ -20,6 +20,9 @@ flash_attn @ https://github.com/mjun0812/flash-attention-prebuild-wheels/release
 # https://github.com/bigbrozer/vinz-wheels
 sageattention @ https://github.com/bigbrozer/vinz-wheels/raw/refs/heads/main/wheels/sageattention-2.2.0-cp313-cp313-linux_x86_64.whl
 
+# Fixing sentencepiece<0.2.1 which does not have pre-build wheels for Python 3.13
+sentencepiece>=0.2.1
+
 # ComfyUI + Manager
 # https://github.com/Comfy-Org/ComfyUI
 -r "https://raw.githubusercontent.com/Comfy-Org/ComfyUI/refs/tags/v${COMFYUI_VERSION}/requirements.txt"
