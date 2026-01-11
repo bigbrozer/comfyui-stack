@@ -54,9 +54,9 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/3b/58/af07dda649c22a1
 
 [[packages]]
 name = "aiortc"
-version = "1.13.0"
-sdist = { url = "https://files.pythonhosted.org/packages/62/03/bc947d74c548e0c17cf94e5d5bdacaed0ee9e5b2bb7b8b8cf1ac7a7c01ec/aiortc-1.13.0.tar.gz", upload-time = 2025-05-27T03:23:59Z, size = 1179894, hashes = { sha256 = "5d209975c22d0910fb5a0f0e2caa828f2da966c53580f7c7170ac3a16a871620" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/87/29/765633cab5f1888890f5f172d1d53009b9b14e079cdfa01a62d9896a9ea9/aiortc-1.13.0-py3-none-any.whl", upload-time = 2025-05-27T03:23:57Z, size = 92910, hashes = { sha256 = "9ccccec98796f6a96bd1c3dd437a06da7e0f57521c96bd56e4b965a91b03a0a0" } }]
+version = "1.14.0"
+sdist = { url = "https://files.pythonhosted.org/packages/51/9c/4e027bfe0195de0442da301e2389329496745d40ae44d2d7c4571c4290ce/aiortc-1.14.0.tar.gz", upload-time = 2025-10-13T21:40:37Z, size = 1180864, hashes = { sha256 = "adc8a67ace10a085721e588e06a00358ed8eaf5f6b62f0a95358ff45628dd762" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/57/ab/31646a49209568cde3b97eeade0d28bb78b400e6645c56422c101df68932/aiortc-1.14.0-py3-none-any.whl", upload-time = 2025-10-13T21:40:36Z, size = 93183, hashes = { sha256 = "4b244d7e482f4e1f67e685b3468269628eca1ec91fa5b329ab517738cfca086e" } }]
 
 [[packages]]
 name = "aiosignal"
@@ -126,8 +126,9 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/57/8d/30aa32745af16af
 
 [[packages]]
 name = "av"
-version = "14.4.0"
-sdist = { url = "https://files.pythonhosted.org/packages/86/f6/0b473dab52dfdea05f28f3578b1c56b6c796ce85e76951bab7c4e38d5a74/av-14.4.0.tar.gz", upload-time = 2025-05-16T19:13:35Z, size = 3892203, hashes = { sha256 = "3ecbf803a7fdf67229c0edada0830d6bfaea4d10bfb24f0c3f4e607cd1064b42" } }
+version = "15.1.0"
+sdist = { url = "https://files.pythonhosted.org/packages/e9/c3/83e6e73d1592bc54436eae0bc61704ae0cff0c3cfbde7b58af9ed67ebb49/av-15.1.0.tar.gz", upload-time = 2025-08-30T04:41:56Z, size = 3774192, hashes = { sha256 = "39cda2dc810e11c1938f8cb5759c41d6b630550236b3365790e67a313660ec85" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/d7/97/2c4e0288ad4359b6064cb06ae79c2ff3a84ac73d27e91f2161b75fcd86fa/av-15.1.0-cp313-cp313-manylinux_2_28_x86_64.whl", upload-time = 2025-08-30T04:40:34Z, size = 39642563, hashes = { sha256 = "729179cd8622815e8b6f6854d13a806fe710576e08895c77e5e4ad254609de9a" } }]
 
 [[packages]]
 name = "beautifulsoup4"
