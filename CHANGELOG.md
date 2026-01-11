@@ -4,12 +4,16 @@
 
 All notable changes to this project will be documented in this file.
 
-## 0.11.0 - 2026-01-04
+## 0.11.0 - 2026-01-11
 
 ### <!-- 0 -->🚀 Features
 
-* **comfy**: Bump to v0.7.0
-  * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.7.0>
+* **comfy**: Bump to v0.8.2
+  * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.8.2>
+* **core**: Moving to new ComfyUI URL
+  * [ComfyUI repo will move to Comfy Org account by Jan 6](https://blog.comfy.org/p/comfyui-repo-will-moved-to-comfy)
+* **nodes**: Add custom node `comfyui-detail-daemon`
+  * [Jonseed/ComfyUI-Detail-Daemon](https://github.com/Jonseed/ComfyUI-Detail-Daemon): Adjust sigmas that generally enhance details, and possibly remove unwanted bokeh or background blurring.
 * **nodes**: Pre-install comfyui-rmbg
   * A custom node engineered for advanced image background removal and precise segmentation of objects, faces, clothing, and fashion elements.
   * See [1038lab/ComfyUI-RMBG](https://github.com/1038lab/ComfyUI-RMBG) for details
@@ -17,9 +21,16 @@ All notable changes to this project will be documented in this file.
   * This custom node integrates the powerful Qwen-VL series of vision-language models including the latest Qwen3-VL and Qwen2.5-VL.
   * This is the version without GGUF support.
   * See [1038lab/ComfyUI-QwenVL](https://github.com/1038lab/ComfyUI-QwenVL) for details
+* **python**: Prune the `uv` cache after syncing dependencies
+* **python**: Bump to 3.13.11
 
 ### <!-- 1 -->🐛 Bug Fixes
 
+* **deps**: Av==14.4.0 does not have pre-build wheel for python 3.13
+  * Use `av>=15.0.0,<16` which has.
+* **deps**: Sentencepiece==0.2.0 does not have pre-build wheel for python 3.13
+  * Use `sentencepiece>=0.2.1` which has.
+* **entrypoint**: Increase uv http timeout for downloading some packages (cuda)
 * **perms**: Changed permission test logic
 
 ## 0.10.0 - 2025-12-20
@@ -27,8 +38,8 @@ All notable changes to this project will be documented in this file.
 ### <!-- 0 -->🚀 Features
 
 * **comfy**: Bump to v0.5.1
-  * Announcement for [v0.5.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.5.0)
-  * Patch release [v0.5.1](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.5.1)
+  * Announcement for [v0.5.0](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.5.0)
+  * Patch release [v0.5.1](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.5.1)
 * **sage-attention**: Use pre-compiled wheels with cuda 13 support
 * **sharing**: Add `matrix-nio` dependency for sharing support
 * **startup**: Enable the new manager
